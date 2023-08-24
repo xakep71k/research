@@ -1,5 +1,6 @@
 fn main() {
     let filename = "/home/alek/tmp/1.txt";
+    let now = std::time::Instant::now();
     let lines = lines_from_file(filename);
     println!("{:?} reading input data", now.elapsed());
 
